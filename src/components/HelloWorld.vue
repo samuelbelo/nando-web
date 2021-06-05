@@ -11,8 +11,11 @@
       </v-col>
 
       <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">Welcome to Vuetify</h1>
-
+        <h1 class="display-2 font-weight-bold mb-3">Bem vindo ao site do Nando</h1> 
+        <h2>Agora vou fazer aqui uma brincadeira</h2>
+        <h3>{{msgNova}}</h3>
+        <h3>{{outraMsg}}</h3>
+        <h3>Legal né???? :D</h3>
         <p class="subheading font-weight-regular">
           For help and collaboration with other Vuetify developers,
           <br />please join our online
@@ -78,6 +81,8 @@ export default {
   name: "HelloWorld",
 
   data: () => ({
+    msgNova: "Essa é uma mensagem passada através de template :D",
+    outraMsg: "Veja que nao to escrevendo diretamente no html",
     ecosystem: [
       {
         text: "vuetify-loader",
